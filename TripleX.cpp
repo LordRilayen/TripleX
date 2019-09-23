@@ -10,6 +10,11 @@ int main()
 	const int CodeA = 4;
 	const int CodeB = 3;
 	const int CodeC = 2;
+	int GuessA;
+	int GuessB;
+	int GuessC;
+	int GuessSum;
+	int GuessProduct;
 
 
 	const int CodeSum = CodeA + CodeB + CodeC;
@@ -21,7 +26,12 @@ int main()
 	std::cout << "The codes add up to: " << CodeSum << std::endl;
 	std::cout << "The codes multiply to give: " <<CodeProduct << std::endl;
 
-	int PlayerGuess;
+	std::cin >> GuessA;
+	std::cin >> GuessB;
+	std::cin >> GuessC;
+
+	GuessSum = GuessA + GuessB + GuessC;
+	GuessProduct = GuessA * GuessB * GuessC;
 
 	return 0;
 }
